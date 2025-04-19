@@ -3,17 +3,15 @@ Add support for Aqara RELAY (LLRZMK11LM)
 """
 # Import the device class from the component that you want to support
 
-import homeassistant.helpers.config_validation as cv
 import logging
-import voluptuous as vol
+
 import asyncio
 import datetime
 
-from homeassistant.const import (STATE_OFF, STATE_ON, POWER_WATT)
+from homeassistant.const import (POWER_WATT)
 from homeassistant.components.switch import SwitchDevice
 from homeassistant.helpers.entity import Entity
 from functools import partial
-from math import ceil
 from . import DOMAIN
 
 # Home Assistant depends on 3rd party packages for API specific code.

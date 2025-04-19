@@ -15,8 +15,6 @@ from homeassistant.components.light import (
     SUPPORT_COLOR_TEMP,
     Light,
 )
-from homeassistant.const import (CONF_HOST, CONF_NAME, CONF_TOKEN, STATE_OFF, STATE_ON)
-from homeassistant.helpers.entity import Entity
 from functools import partial
 from math import ceil
 from . import DOMAIN

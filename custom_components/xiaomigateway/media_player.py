@@ -2,9 +2,7 @@
 Add support for the Xiaomi Gateway FM Radio.
 """
 
-import homeassistant.helpers.config_validation as cv 
 import logging
-import voluptuous as vol
 import asyncio
 
 from homeassistant.components.media_player import MediaPlayerDevice

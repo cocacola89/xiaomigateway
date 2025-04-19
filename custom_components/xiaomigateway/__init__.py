@@ -3,17 +3,12 @@ import logging
 import voluptuous as vol
 import asyncio
 
-from datetime import timedelta
 from homeassistant.const import (
-    CONF_HOST, CONF_NAME, CONF_TOKEN, EVENT_HOMEASSISTANT_STOP,
+    CONF_HOST, CONF_NAME, CONF_TOKEN,
 )
 from homeassistant.helpers import config_validation as cv
-from homeassistant.util import Throttle
 from homeassistant.helpers import discovery
-from functools import partial
-from homeassistant.components.discovery import (
-    CONFIG_SCHEMA, SERVICE_HASSIO
-)
+
 
 REQUIREMENTS = ['python-miio>=0.3.7']
 
