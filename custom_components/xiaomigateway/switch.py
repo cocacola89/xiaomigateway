@@ -37,8 +37,7 @@ _LOGGER = logging.getLogger(__name__)
 POWER=0.0
 
 
-@asyncio.coroutine
-def async_setup_platform(hass, config, async_add_devices, discovery_info=None):
+async def async_setup_platform(hass, config, async_add_devices, discovery_info=None):
     """Setup the Aqra LED Bulb."""
 
     if DOMAIN not in hass.data:

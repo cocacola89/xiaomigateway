@@ -86,8 +86,8 @@ _LOGGER = logging.getLogger(__name__)
 ZNLDP12LM = 66
 LLKZMK11LM = 54
 
-@asyncio.coroutine
-def async_setup(hass, config):
+
+async def async_setup(hass, config):
 #def setup(hass, config):
     """Set up the Xiaomi Gateway miio platform."""
     from miio import Device, DeviceException

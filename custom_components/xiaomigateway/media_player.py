@@ -32,8 +32,7 @@ SUPPORT_XIAOMIGATEWAY_RADIO = \
     SUPPORT_PREVIOUS_TRACK | SUPPORT_SELECT_SOURCE
 
 
-@asyncio.coroutine
-def async_setup_platform(hass, config, async_add_devices, discovery_info=None):
+async def async_setup_platform(hass, config, async_add_devices, discovery_info=None):
     """Set up the Xiaomi Gateway FM Radio miio platform."""
 
     if DOMAIN not in hass.data:
